@@ -49,8 +49,8 @@ if data:
     print(l)
     driver_path ='./chromedriver.exe'
     
-    service = Service(executable_path=driver_path) # 2) executable_pathを指定
-    driver = webdriver.Chrome(service=service,options=options) # 3) serviceを渡す
+    # service = Service(executable_path=driver_path) # 2) executable_pathを指定
+    driver = webdriver.Chrome(driver_path,options=options) # 3) serviceを渡す
 
     target_url = "https://app.ahrefs.com/user/login"
     driver.get(target_url)
