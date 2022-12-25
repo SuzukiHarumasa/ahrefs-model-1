@@ -43,8 +43,8 @@ if data:
     options.add_argument('--disable-dev-shm-usage')
     profile_path = '/Users/suzukiharumasaru/Library/Application Support/Google/Chrome/Profile ahrefs'
     options.add_argument('--user-data-dir=' + profile_path)
-    DRIVER_PATH='./chromedriver'
-    
+    DRIVER_PATH='chromedriver'
+
     driver = webdriver.Chrome(executable_path=DRIVER_PATH,chrome_options=options)
 
     target_url = "https://app.ahrefs.com/user/login"
