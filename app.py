@@ -10,7 +10,7 @@ import io
 import csv
 from PIL import Image
 import glob
-from selenium.webdriver.chrome.service import Service # 1) Serviceのインポート
+# from selenium.webdriver.chrome.service import Service # 1) Serviceのインポート
 
 IMG_PATH = './tmp_dir'
 
