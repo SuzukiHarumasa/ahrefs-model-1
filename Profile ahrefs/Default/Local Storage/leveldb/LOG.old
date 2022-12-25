@@ -1,3 +1,3 @@
-2022/12/25-14:43:20.655 f603 Reusing MANIFEST /Users/suzukiharumasaru/apps/scraping-monorogu/./Profile ahrefs/Default/Local Storage/leveldb/MANIFEST-000001
-2022/12/25-14:43:20.660 f603 Recovering log #15
-2022/12/25-14:43:20.662 f603 Reusing old log /Users/suzukiharumasaru/apps/scraping-monorogu/./Profile ahrefs/Default/Local Storage/leveldb/000015.log 
+2022/12/25-14:47:08.107 a203 Reusing MANIFEST /Users/suzukiharumasaru/apps/scraping-monorogu/./Profile ahrefs/Default/Local Storage/leveldb/MANIFEST-000001
+2022/12/25-14:47:08.107 a203 Recovering log #15
+2022/12/25-14:47:08.107 a203 Reusing old log /Users/suzukiharumasaru/apps/scraping-monorogu/./Profile ahrefs/Default/Local Storage/leveldb/000015.log 

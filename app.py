@@ -10,7 +10,7 @@ import io
 import csv
 from PIL import Image
 import glob
-# from selenium.webdriver.chrome.service import Service # 1) Serviceのインポート
+from selenium.webdriver.chrome.service import Service # 1) Serviceのインポート
 
 IMG_PATH = './tmp_dir'
 
@@ -47,10 +47,10 @@ if data:
     options.add_argument('--user-data-dir=' + profile_path)
     l=glob.glob("./*")
     print(l)
-    driver_path ='./chromedriver.exe'
+    driver_path ='./chromedriver'
     
-    # service = Service(executable_path=driver_path) # 2) executable_pathを指定
-    driver = webdriver.Chrome(options=options) # 3) serviceを渡す
+    service = Service(executable_path=driver_path) # 2) executable_pathを指定
+    driver = webdriver.Chrome(service=service,options=options) # 3) serviceを渡す
 
     target_url = "https://app.ahrefs.com/user/login"
     driver.get(target_url)
