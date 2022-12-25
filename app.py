@@ -9,6 +9,7 @@ import os
 import io
 import csv
 from PIL import Image
+import glob
 
 IMG_PATH = './tmp_dir'
 
@@ -43,6 +44,7 @@ if data:
     options.add_argument('--disable-dev-shm-usage')
     profile_path = '/Users/suzukiharumasaru/Library/Application Support/Google/Chrome/Profile ahrefs'
     options.add_argument('--user-data-dir=' + profile_path)
+    print(glob.glob())
     DRIVER_PATH='chromedriver'
 
     driver = webdriver.Chrome(executable_path=DRIVER_PATH,chrome_options=options)
