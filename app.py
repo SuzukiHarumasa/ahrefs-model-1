@@ -36,13 +36,16 @@ if data:
     st.image(second_image,width=300)
     data = pd.read_csv(data)
     st.dataframe(data)
+
     options = webdriver.chrome.options.Options()
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
     profile_path = '/Users/suzukiharumasaru/Library/Application Support/Google/Chrome/Profile ahrefs'
     options.add_argument('--user-data-dir=' + profile_path)
-    driver = webdriver.Chrome(chrome_options=options)
+    DRIVER_PATH='./chromedriver'
+    
+    driver = webdriver.Chrome(executable_path=DRIVER_PATH,chrome_options=options)
 
     target_url = "https://app.ahrefs.com/user/login"
     driver.get(target_url)
