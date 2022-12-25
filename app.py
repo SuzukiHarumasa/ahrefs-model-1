@@ -42,9 +42,9 @@ if data:
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
-    profile_path = '/Users/suzukiharumasaru/Library/Application Support/Google/Chrome/Profile ahrefs'
+    profile_path = './Profile ahrefs'
     options.add_argument('--user-data-dir=' + profile_path)
-    print(glob.glob())
+    print(glob.glob("./*"))
     DRIVER_PATH='chromedriver'
 
     driver = webdriver.Chrome(executable_path=DRIVER_PATH,chrome_options=options)
