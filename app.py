@@ -47,10 +47,10 @@ if data:
     options.add_argument('--user-data-dir=' + profile_path)
     l=glob.glob("./*")
     print(l)
-    driver_path ='./chromedriver'
+    # driver_path ='./chromedriver.exe'
     
-    service = Service(executable_path=driver_path) # 2) executable_pathを指定
-    driver = webdriver.Chrome(service=service,options=options) # 3) serviceを渡す
+    # service = Service(executable_path=driver_path) # 2) executable_pathを指定
+    driver = webdriver.Chrome(options=options) # 3) serviceを渡す
 
     target_url = "https://app.ahrefs.com/user/login"
     driver.get(target_url)
